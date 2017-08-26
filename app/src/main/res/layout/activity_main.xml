@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/sv_menu_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_projetoiara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="PROJETO IARA"
+                android:textSize="42sp" />
+
+            <TextView
+                android:id="@+id/tv_monitoramento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="Monitoramento de contaminantes na água"
+                android:textColor="@color/border_1"
+                android:textSize="32sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/layout_border_tab"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_menu_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Leituras: "
+                            android:textAllCaps="false"
+                            android:textSize="18sp"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:id="@+id/tv_menu_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Turbidez: "
+                            android:textAllCaps="false"
+                            android:textSize="18sp"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:id="@+id/tv_menu_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Termperatura: "
+                            android:textAllCaps="false"
+                            android:textSize="18sp"
+                            android:textStyle="normal|bold"
+                            tools:text="Status: " />
+
+                        <TextView
+                            android:id="@+id/tv_menu_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Luminosidade: "
+                            android:textAllCaps="false"
+                            android:textSize="18sp"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:id="@+id/tv_menu_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Latitude: "
+                            android:textAllCaps="false"
+                            android:textSize="18sp"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:id="@+id/tv_menu_7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Longitude: "
+                            android:textAllCaps="false"
+                            android:textSize="18sp"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:id="@+id/tv_menu_8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Data: "
+                            android:textAllCaps="false"
+                            android:textSize="18sp"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:id="@+id/tv_menu_9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Cronometro: "
+                            android:textAllCaps="false"
+                            android:textSize="18sp"
+                            android:textStyle="normal|bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_leituras"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TextView"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_turbidez"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TextView"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_temperatura"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TextView"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_luminosidade"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TextView"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_latitude"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TextView"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_longitude"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TextView"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_data"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TextView"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_cronometro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TextView"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/bt_medicao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button01"
+                    android:gravity="center"
+                    android:text="Medição"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
