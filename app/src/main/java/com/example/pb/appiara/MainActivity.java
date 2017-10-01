@@ -3,6 +3,7 @@ package com.example.pb.appiara;
 import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.annotation.MainThread;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,6 +15,7 @@ import android.widget.Toast;
 import com.example.pb.appiara.entity.Medicao;
 import com.example.pb.appiara.util.MedicaoUtil;
 
+import java.text.DecimalFormat;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -30,12 +32,6 @@ public class MainActivity extends AppCompatActivity {
         return MainActivity.context;
     }
 
-    @Bind(R.id.tv_leituras)
-    TextView tvLeitura;
-
-    @Bind(R.id.tv_turbidez)
-    TextView tvTurbidez;
-
     @Bind(R.id.tv_temperatura)
     TextView tvTemperatura;
 
@@ -45,14 +41,8 @@ public class MainActivity extends AppCompatActivity {
     @Bind(R.id.tv_latitude)
     TextView tvLatitude;
 
-    @Bind(R.id.tv_longitude)
-    TextView tvLongitude;
-
     @Bind(R.id.tv_data)
     TextView tvData;
-
-    @Bind(R.id.tv_cronometro)
-    TextView tvCronometro;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -134,14 +124,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void escreverDados(Medicao medicao){
-        tvLeitura.setText(medicao.getLeitura().toString());
-        tvTurbidez.setText(medicao.getTurbidez().toString());
         tvTemperatura.setText(medicao.getTemperatura().toString());
+        tvTemperatura.setBackgroundColor(Color.parseColor(MedicaoUtil.getTempColor(medicao)));
+
         tvLuminosidade.setText(medicao.getLuminosidade().toString());
-        tvLatitude.setText(medicao.getLatitude().toString());
-        tvLongitude.setText(medicao.getLongitude().toString());
-        tvData.setText(medicao.getData().toString());
-        tvCronometro.setText(medicao.getCronometro().toString());
+        tvLuminosidade.setBackgroundColor(Color.parseColor(MedicaoUtil.getPHColor(medicao)));
+
+        DecimalFormat df = new DecimalFormat();
+        df.setMaximumFractionDigits(3);
+        tvLatitude.setText(df.format(medicao.getLatitude()).toString());
+        tvLatitude.setBackgroundColor(Color.parseColor(MedicaoUtil.getCondColor(medicao)));
+
+        tvData.setText(medicao.getData().toString() + " - " + medicao.getCronometro().toString());
+
+
     }
 
     public void notifyThis(String title, String message) {

@@ -18,25 +18,6 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tv_projetoiara"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
-                android:gravity="center"
-                android:text="PROJETO IARA"
-                android:textSize="42sp" />
-
-            <TextView
-                android:id="@+id/tv_monitoramento"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
-                android:gravity="center"
-                android:text="Monitoramento de contaminantes na água"
-                android:textColor="@color/border_1"
-                android:textSize="32sp" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -55,7 +36,6 @@
                     android:layout_marginRight="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_gravity="center"
-                    android:background="@drawable/layout_border_tab"
                     android:orientation="horizontal">
 
                     <LinearLayout
@@ -68,77 +48,41 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/tv_menu_1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Leituras: "
-                            android:textAllCaps="false"
-                            android:textSize="18sp"
-                            android:textStyle="normal|bold" />
-
-                        <TextView
-                            android:id="@+id/tv_menu_3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Turbidez: "
-                            android:textAllCaps="false"
-                            android:textSize="18sp"
-                            android:textStyle="normal|bold" />
-
-                        <TextView
                             android:id="@+id/tv_menu_2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Termperatura: "
+                            android:text="Temp: °C: "
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
                             android:textAllCaps="false"
-                            android:textSize="18sp"
-                            android:textStyle="normal|bold"
-                            tools:text="Status: " />
+                            android:textSize="24sp"
+                            android:textStyle="normal|bold" />
 
                         <TextView
                             android:id="@+id/tv_menu_5"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Luminosidade: "
+                            android:text="PH: "
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
                             android:textAllCaps="false"
-                            android:textSize="18sp"
+                            android:textSize="24sp"
                             android:textStyle="normal|bold" />
 
                         <TextView
                             android:id="@+id/tv_menu_6"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Latitude: "
+                            android:text="Condutividade: "
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
                             android:textAllCaps="false"
-                            android:textSize="18sp"
+                            android:textSize="24sp"
                             android:textStyle="normal|bold" />
 
-                        <TextView
-                            android:id="@+id/tv_menu_7"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Longitude: "
-                            android:textAllCaps="false"
-                            android:textSize="18sp"
-                            android:textStyle="normal|bold" />
 
-                        <TextView
-                            android:id="@+id/tv_menu_8"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Data: "
-                            android:textAllCaps="false"
-                            android:textSize="18sp"
-                            android:textStyle="normal|bold" />
 
-                        <TextView
-                            android:id="@+id/tv_menu_9"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Cronometro: "
-                            android:textAllCaps="false"
-                            android:textSize="18sp"
-                            android:textStyle="normal|bold" />
+
                     </LinearLayout>
 
                     <LinearLayout
@@ -150,64 +94,64 @@
                         android:layout_marginTop="10dp"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/tv_leituras"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="TextView"
-                            android:textSize="18sp" />
-
-                        <TextView
-                            android:id="@+id/tv_turbidez"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="TextView"
-                            android:textSize="18sp" />
 
                         <TextView
                             android:id="@+id/tv_temperatura"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="TextView"
-                            android:textSize="18sp" />
+                            android:text="0"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="normal|bold"
+                            android:textSize="24sp" />
 
                         <TextView
                             android:id="@+id/tv_luminosidade"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="TextView"
-                            android:textSize="18sp" />
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="normal|bold"
+                            android:text="0"
+                            android:gravity="center"
+                            android:textSize="24sp" />
 
                         <TextView
                             android:id="@+id/tv_latitude"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="TextView"
-                            android:textSize="18sp" />
+                            android:layout_marginBottom="10dp"
+                            android:textStyle="normal|bold"
+                            android:layout_marginTop="10dp"
+                            android:text="0"
+                            android:gravity="center"
+                            android:textSize="24sp" />
 
-                        <TextView
-                            android:id="@+id/tv_longitude"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="TextView"
-                            android:textSize="18sp" />
 
-                        <TextView
-                            android:id="@+id/tv_data"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="TextView"
-                            android:textSize="18sp" />
 
-                        <TextView
-                            android:id="@+id/tv_cronometro"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="TextView"
-                            android:textSize="18sp" />
+
                     </LinearLayout>
 
                 </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_menu_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Data: "
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:textSize="24sp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/tv_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textSize="24sp" />
 
             </LinearLayout>
 
@@ -226,8 +170,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button01"
+                    android:textColor="@color/branco"
                     android:gravity="center"
-                    android:text="Medição"
+                    android:text="Atualizar Medida"
+                    android:textSize="18sp"
                     android:textAllCaps="false" />
             </LinearLayout>
 
