@@ -30,6 +30,45 @@
 
                 <LinearLayout
                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btProcurar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button01"
+                            android:gravity="center"
+                            android:text="Procurar..."
+                            android:textAllCaps="false" />
+                        <Button
+                            android:id="@+id/btParear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button01"
+                            android:gravity="center"
+                            android:text="Parear..."
+                            android:textAllCaps="false" />
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/listBTDevices"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginBottom="10dp"
                     android:layout_marginLeft="10dp"
@@ -37,6 +76,8 @@
                     android:layout_marginTop="10dp"
                     android:layout_gravity="center"
                     android:orientation="horizontal">
+
+
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -165,16 +206,6 @@
                 android:layout_marginTop="20dp"
                 android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/bt_medicao"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/button01"
-                    android:textColor="@color/branco"
-                    android:gravity="center"
-                    android:text="Atualizar Medida"
-                    android:textSize="18sp"
-                    android:textAllCaps="false" />
             </LinearLayout>
 
         </LinearLayout>
